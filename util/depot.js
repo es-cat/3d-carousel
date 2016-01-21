@@ -11,7 +11,6 @@ export  default function depot (initialState, initialProps, callback) {
     var state = initialState;
     var props = initialProps;
     var requestID;
-    console.log(callback);
     res.onNextProps = function onNextProps(nextProps) {
         if (true /*props.layout != nextProps.layout || props.items != nextProps.items*/) {
             props = nextProps;
@@ -132,10 +131,10 @@ var present = function present(entries) {
 };
 
 function startFrame(now, then) {
-    return now || Util.merge(then, { present: true, opacity: 0 });
+    return now || Util.merge(then, { present: true, /*opacity: 0 */});
 }
 
 function endFrame(now, then) {
-    return now && !then ? Util.merge(now, { present: false, opacity: 0 }) // leaves
-    : Util.merge(then, { present: true, opacity: 1 });
+    return now && !then ? Util.merge(now, { present: false, /*opacity: 0 */}) // leaves
+    : Util.merge(then, { present: true, /*opacity: 1*/ });
 }

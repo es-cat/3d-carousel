@@ -67,11 +67,6 @@ const initialState = {
             url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtp1/t31.0-8/12248124_10203613334413598_3005421614401152049_o.jpg',
             title: 'this items title ',
             link: 'http://dummyimage.com/'
-        },
-        {
-            url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12248263_10203626230816000_8407120421047731518_o.jpg',
-            title: 'this items title ',
-            link: 'http://dummyimage.com/'
         }
        // {
        //      url: 'http://dummyimage.com/600x400/4db594/fff&text=00',

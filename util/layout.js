@@ -30,6 +30,7 @@ export  default function Layout(){
                     var ratio = {};
                     var angleR =Math.PI*(0.5) - ( d * angle + acceptable)  ; 
                     var thisRotate = 0.5;
+                    var opacity = 0;
 
                     if(Math.abs(Math.cos(angleR)) !=  1  ){
                         ratio.easeOut =1+  Math.round((cubicOut( sides, 0, maxRatio, sides-1)*10)/10);
@@ -40,16 +41,23 @@ export  default function Layout(){
                         thisRotate = Math.sin(angleR + Math.PI *0.5)*0.35;   
                     }
 
+                    if (Math.sin(angleR) != 1) {
+                        opacity = Math.max(Math.sin(angleR), 0.4);
+                    } else {
+                        opacity = 1;
+                    }
+
+
                     // console.log('d:  '+d+'===================');
                     // console.log('angleR:  '+angleR);
                     // console.log('sin:  '+Math.sin(angleR));
                     // console.log('ratio:  '+ratio);
                     // console.log('===================');
                     return {
-                        rotateY: 0 - thisRotate*ratio.easeOut ,
+                        rotateY: /*0 - thisRotate*ratio.easeOut */0 - thisRotate*ratio.easeOut ,
                         translateX: (r * Math.cos(angleR)) *xDistance,
-                        translateZ: 0 -  r * Math.abs(1 - Math.sin(angleR)) *zDistance, //bug issue with change z distance witnout min value
-                        // opacity: Math.sin(angleR) !=1 ? Math.sin(angleR )  :1,
+                        translateZ: 0 -  r * Math.abs(1 - Math.sin(angleR)) *zDistance*ratio.easeOut, //bug issue with change z distance witnout min value
+                        opacity: opacity,
                         present: true,
                         key: d,
                         image: images[d].url
