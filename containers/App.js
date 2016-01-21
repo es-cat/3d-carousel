@@ -28,7 +28,7 @@ var App = React.createClass({
             layout: 'itunes',
             width: 400,
             duration: 300 ,
-            ease: 'linear' ,
+            ease: 'bounceInOut' ,
             zDistance:15,          
             xDistance:2.7         
         };
