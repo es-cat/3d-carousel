@@ -31,8 +31,8 @@ var Banner = React.createClass({
         this.onRotate = this.depot.onRotate.bind(this);       
     },
     componentWillReceiveProps:function(nextProps){
-        console.log('props change');
-        console.log(nextProps);
+        // console.log('props change');
+        // console.log(nextProps);
         this.depot.onNextProps(nextProps);
     },
     render: function() {
