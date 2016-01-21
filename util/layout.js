@@ -46,10 +46,10 @@ export  default function Layout(){
                     // console.log('ratio:  '+ratio);
                     // console.log('===================');
                     return {
-                        rotateY: /*0 - thisRotate*ratio.easeOut */0 - thisRotate*ratio.easeOut ,
+                        rotateY: 0 - thisRotate*ratio.easeOut ,
                         translateX: (r * Math.cos(angleR)) *xDistance,
-                        translateZ: 0 -  r * Math.abs(1 - Math.sin(angleR)) *zDistance*ratio.easeOut, //bug issue with change z distance witnout min value
-                        opacity: Math.sin(angleR) !=1 ? Math.sin(angleR )  :1,
+                        translateZ: 0 -  r * Math.abs(1 - Math.sin(angleR)) *zDistance, //bug issue with change z distance witnout min value
+                        // opacity: Math.sin(angleR) !=1 ? Math.sin(angleR )  :1,
                         present: true,
                         key: d,
                         image: images[d].url

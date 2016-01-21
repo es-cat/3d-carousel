@@ -51,13 +51,28 @@ table {
 }
 
 .mdBanner {
-    $aItemGrid:500px;
+    $aItemGrid:400px;
     $aRotateY: 20;
     width: 100vw;
-    height: 100vh;
-    margin: 100px auto;
+    height: 70vh;
+    margin: 15vh auto;
+    overflow: hidden;
     .btnPrev , .btnNext {
+        font-size: 20px;
+        font-weight: bold;
         color: #fff;
+    }
+    .btnPrev  {
+        position: absolute;
+        left: 10vw;
+        top:20vh;
+        z-index: 99;
+    }
+    .btnNext  {
+        position: absolute;
+        right: 10vw;
+        top:20vh;
+        z-index: 99;
     }
     .mdBanner-list {
         position: relative;
@@ -65,7 +80,7 @@ table {
         margin: 0 auto;
         transform-style: preserve-3d;
         perspective: 1500px;
-        min-height: 800px;
+        min-height: 700px;
         li {
             transform-origin:50% 50%;
             display: block;
@@ -74,7 +89,9 @@ table {
             width: $aItemGrid;
             top:50%;
             left:0;
+            // transition: opacity 0.3s ease;
             margin-top: -50%;
+            // opacity: 0;
             -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.3));
             a {display: block;}
             img {
