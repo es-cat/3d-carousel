@@ -61,7 +61,7 @@ table {
 
 .mdBanner .mdBanner-list {
   position: relative;
-  width: 400px;
+  width: 30vw;
   margin: 0 auto;
   perspective: 500px;
 }
@@ -71,7 +71,7 @@ table {
   display: block;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 0 0 3px red;
   position: absolute;
-  width: 400px;
+  width: 30vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -86,27 +86,3 @@ table {
   display: block;
 }
 
-.mdBanner .mdBanner-list li.actors-0 {
-  transform: translateX(-560px) rotateY(40deg) scale(0.6);
-  z-index: 1;
-}
-
-.mdBanner .mdBanner-list li.actors-1 {
-  transform: translateX(-400px) rotateY(10deg) scale(0.8) translateX(-10px);
-  z-index: 2;
-}
-
-.mdBanner .mdBanner-list li.actors-2 {
-  transform: translateX(0px) rotateY(0deg);
-  z-index: 3;
-}
-
-.mdBanner .mdBanner-list li.actors-3 {
-  transform: translateX(400px) rotateY(-10deg) scale(0.8) translateX(10px);
-  z-index: 2;
-}
-
-.mdBanner .mdBanner-list li.actors-4 {
-  transform: translateX(560px) rotateY(-20deg) scale(0.6);
-  z-index: 1;
-}

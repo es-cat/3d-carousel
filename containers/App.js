@@ -26,11 +26,14 @@ var App = React.createClass({
     getInitialState: function() {
         var state = {
             layout: 'itunes',
-            width: 400,
+            perspective:1500,
+            width: '30%',
+            diameter: 480,
+            zDistance:1,
+            xDistance:1,
+            opacity: true,
             duration: 300 ,
-            ease: 'bounceInOut' ,
-            zDistance:15,          
-            xDistance:2.7         
+            ease: 'linear' 
         };
         var _this = this;
         var easeType = [];
@@ -41,14 +44,17 @@ var App = React.createClass({
         });
 
         this.controller = {};
-        this.controller.duration = gui.add(state, 'duration',0, 2000).step(300);
+        this.controller.perspective = gui.add(state, 'perspective',0, 3000).step(50);
+        this.controller.width = gui.add(state, 'width');
+        this.controller.diameter = gui.add(state, 'diameter',0, 2000).step(1);
         this.controller.zDistance = gui.add(state, 'zDistance',1, 20).step(0.05);
-        this.controller.xDistance = gui.add(state, 'xDistance',0.5, 5).step(0.05);
+        this.controller.xDistance = gui.add(state, 'xDistance',1, 20).step(0.05);
+        this.controller.opacity = gui.add(state, 'opacity');
+        this.controller.duration = gui.add(state, 'duration',0, 2000).step(300);
         this.controller.ease = gui.add(state, 'ease',easeType);
 
        Util.mapObj(function(input){
             input.onFinishChange(function(value) {
-                // console.log(value);
                 _this.setState(Object.assign({},_this.state, state));
             });
         }, this.controller);
@@ -67,16 +73,19 @@ var App = React.createClass({
      const { banner , actions } = this.props
       return (
         <div>
-            <Banner  
+            <Banner 
                 items={ banner.items } 
                 current={banner.current}  
-                actions={ actions }  
-                layout={'itunes'} 
-                width={400}
+                actions={ actions }
+                layout={'itunes'}
                 duration={this.state.duration}
-                zDistance={this.state.zDistance}       
+                perspective={this.state.perspective}
+                diameter={this.state.diameter}
+                width={this.state.width}
+                zDistance={this.state.zDistance}
                 xDistance={this.state.xDistance} 
-                ease={this.state.ease} />
+                ease={this.state.ease}
+                opacity={this.state.opacity} />
         </div> 
         );
     }

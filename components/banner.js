@@ -37,24 +37,28 @@ var Banner = React.createClass({
     render: function() {
         // console.log('rander');
         var angle = 2 * Math.PI / this.state.figures.length;
+        var listStyle = {
+            perspective: this.props.perspective + 'px',
+            width: !isNaN(this.props.width) ? this.props.width+ 'px' : this.props.width
+        };
+
         var figures =  this.state.figures.map(function(d,i) {
                 return (
-                    <li key={i}  style={Util.figureStyle(d)}>
+                    <div key={i}  style={Util.figureStyle(d)}>
                         <a title={d.title} href={d.link} target="_blank">
                             <img className="image" src={d.image} />
                         </a>
-                    </li>
+                    </div>
                 ); 
         });
         return (
             <div>
-                <p></p>
                 <div className = {'mdBanner'}>
-                    <a className={'btnPrev'} href={'#'} onClick={Util.partial(this.onRotate,-angle)}>to PREV</a><br/>
-                    <a className={'btnNext'} href={'#'} onClick={Util.partial(this.onRotate,+angle)}>to NEXT</a><br/>
-                    <ul className={"mdBanner-list"} ref="bannerList">
+                    <div className={"mdBanner-list"} ref="bannerList" style= {listStyle}>
+                        <a className={'btnPrev'} href={'#'} onClick={Util.partial(this.onRotate,-angle)}>to PREV</a><br/>
                         {figures}
-                    </ul>
+                        <a className={'btnNext'} href={'#'} onClick={Util.partial(this.onRotate,+angle)}>to NEXT</a><br/>
+                    </div>
                 </div>                
             </div>
         );

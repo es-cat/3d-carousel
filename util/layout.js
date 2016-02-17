@@ -5,13 +5,11 @@ export  default function Layout(){
     var layout = this;
     layout.itunes = {
             distance: function distance(width, sides) {
-                return Math.round(width * Math.log(sides));
             },
             figures: function figures(props, images, initial) {
                 var sides = images.length;
-                var r = 960 / 2;
+                var r = Math.floor(props.diameter / 2);
                 var angle = Math.PI * 2 / (sides);
-                var distance =  layout.itunes.distance(props.width, sides);
                 var acceptable = Math.round(initial / angle) * angle;
                 var rotate = 20;
                 var maxRatio = 0.4;
@@ -38,7 +36,7 @@ export  default function Layout(){
                     }
 
                     if( Math.sin(angleR) != -1){
-                        thisRotate = Math.sin(angleR + Math.PI *0.5)*0.35;   
+                        thisRotate = Math.sin(angleR + Math.PI *0.5)*0.3;   
                     }
 
                     if (Math.sin(angleR) != 1) {
@@ -47,17 +45,12 @@ export  default function Layout(){
                         opacity = 1;
                     }
 
-
-                    // console.log('d:  '+d+'===================');
-                    // console.log('angleR:  '+angleR);
-                    // console.log('sin:  '+Math.sin(angleR));
-                    // console.log('ratio:  '+ratio);
-                    // console.log('===================');
                     return {
-                        rotateY: /*0 - thisRotate*ratio.easeOut */0 - thisRotate*ratio.easeOut ,
-                        translateX: (r * Math.cos(angleR)) *xDistance,
+                        rotateY: (0 - thisRotate*ratio.easeOut)*-1 ,
+                        translateX: (r * Math.cos(angleR)) *xDistance*ratio.easeOut ,
                         translateZ: 0 -  r * Math.abs(1 - Math.sin(angleR)) *zDistance*ratio.easeOut, //bug issue with change z distance witnout min value
-                        opacity: opacity,
+                        opacity: props.opacity ?  opacity*ratio.easeIn : 1 ,
+                        zIndex:  Math.round(Math.sin(angleR)*100),
                         present: true,
                         key: d,
                         image: images[d].url
@@ -71,6 +64,4 @@ export  default function Layout(){
     
     return layout; 
 };
-
-
 

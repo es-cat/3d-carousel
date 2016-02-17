@@ -5,6 +5,7 @@
 */
 body {
     background-color: #493b3b;
+    max-width: 100vw;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,27 +52,36 @@ table {
 }
 
 .mdBanner {
-    $aItemGrid:400px;
-    $aRotateY: 20;
-    width: 100vw;
-    height: 70vh;
-    margin: 15vh auto;
+    $aItemGrid:40%;
+    $listHeight: 700px;
+    position: relative;
+    z-index: 0;
+    width: 100%;
     overflow: hidden;
+    min-height: $listHeight;
+    margin: 15vh auto;
+
     .btnPrev , .btnNext {
         font-size: 20px;
         font-weight: bold;
         color: #fff;
+        width: 100%;
+        text-align: center;
     }
     .btnPrev  {
         position: absolute;
-        left: 10vw;
-        top:20vh;
+        left: -100%;
         z-index: 99;
+        line-height: $listHeight;
+        vertical-align: middle;
+        // background: rgba(0,0,0,0.3);
     }
     .btnNext  {
         position: absolute;
-        right: 10vw;
-        top:20vh;
+        right: -100%;
+        // background: rgba(0,0,0,0.3);
+        line-height: $listHeight;
+        vertical-align: middle;
         z-index: 99;
     }
     .mdBanner-list {
@@ -80,59 +90,25 @@ table {
         margin: 0 auto;
         transform-style: preserve-3d;
         perspective: 1500px;
-        min-height: 700px;
-        li {
+        min-height: $listHeight;
+        > div {
             transform-origin:50% 50%;
             display: block;
             box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
             position: absolute;
-            width: $aItemGrid;
+            width: 100%;
             top:50%;
             left:0;
-            // transition: opacity 0.3s ease;
             margin-top: -50%;
-            // opacity: 0;
             -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.3));
-            a {display: block;}
+            a {
+                display: block;
+            }
             img {
                 width: 100%;
                 display: block;
             }
         }
-        // //before
-        // li.set-actors-0,li.go-actors-0,li.set-actors-before,li.go-actors-before {
-        //     transform: translateX(-$aItemGrid*1.4) rotateY(40deg) scale(0.6);
-        //     z-index: 1; 
-        //     opacity: 0.6;
-
-        // }
-        // li.set-actors-1,li.go-actors-1  {
-        //     transform: translateX(-$aItemGrid*1) rotateY(10deg) scale(0.8) translateX(-10px);
-        //     z-index: 2;
-        //     opacity: 0.8; 
-
-        // }
-        // //center
-        // li.set-actors-2,li.go-actors-2  {
-        //     transform: translateX(0px) rotateY(0deg);
-        //     z-index: 3;
-        //     opacity: 1.0; 
-
-        // }
-        // //after
-        // li.set-actors-3,li.go-actors-3  {
-        //     transform: translateX($aItemGrid*1) rotateY(-10deg) scale(0.8) translateX(10px);
-        //     z-index: 2;
-        //     opacity: 0.8; 
-        // }
-        // li.set-actors-4,li.go-actors-4 ,li.set-actors-after,li.go-actors-after {
-        //     transform: translateX($aItemGrid*1.4) rotateY(-20deg) scale(0.6);
-        //     z-index: 1;
-        //     opacity: 0.6;
-        // }
-        // li.set-actors-before,li.go-actors-before,li.set-actors-after,li.go-actors-after{
-        //     opacity: 0.3;
-        // }
     }
 }
 

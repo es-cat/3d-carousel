@@ -64,7 +64,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "102def07d30a79e4465f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0649393d0d083dfdd349"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -6061,7 +6061,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nbody {\n  background-color: #493b3b; }\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.mdBanner {\n  width: 100vw;\n  height: 100vh;\n  margin: 100px auto; }\n  .mdBanner .btnPrev, .mdBanner .btnNext {\n    color: #fff; }\n  .mdBanner .mdBanner-list {\n    position: relative;\n    width: 500px;\n    margin: 0 auto;\n    transform-style: preserve-3d;\n    perspective: 1500px;\n    min-height: 800px; }\n    .mdBanner .mdBanner-list li {\n      transform-origin: 50% 50%;\n      display: block;\n      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);\n      position: absolute;\n      width: 500px;\n      top: 50%;\n      left: 0;\n      transition: all .7s ease;\n      margin-top: -50%;\n      -webkit-box-reflect: below 0 -webkit-linear-gradient(transparent, transparent 50%, rgba(255, 255, 255, 0.3)); }\n      .mdBanner .mdBanner-list li a {\n        display: block; }\n      .mdBanner .mdBanner-list li img {\n        width: 100%;\n        display: block; }\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nbody {\n  background-color: #493b3b; }\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.mdBanner {\n  width: 100vw;\n  height: 70vh;\n  margin: 15vh auto;\n  overflow: hidden; }\n  .mdBanner .btnPrev, .mdBanner .btnNext {\n    font-size: 20px;\n    font-weight: bold;\n    color: #fff; }\n  .mdBanner .btnPrev {\n    position: absolute;\n    left: 10vw;\n    top: 20vh;\n    z-index: 99; }\n  .mdBanner .btnNext {\n    position: absolute;\n    right: 10vw;\n    top: 20vh;\n    z-index: 99; }\n  .mdBanner .mdBanner-list {\n    position: relative;\n    width: 400px;\n    margin: 0 auto;\n    transform-style: preserve-3d;\n    perspective: 1500px;\n    min-height: 700px; }\n    .mdBanner .mdBanner-list li {\n      transform-origin: 50% 50%;\n      display: block;\n      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);\n      position: absolute;\n      width: 400px;\n      top: 50%;\n      left: 0;\n      margin-top: -50%;\n      -webkit-box-reflect: below 0 -webkit-linear-gradient(transparent, transparent 50%, rgba(255, 255, 255, 0.3)); }\n      .mdBanner .mdBanner-list li a {\n        display: block; }\n      .mdBanner .mdBanner-list li img {\n        width: 100%;\n        display: block; }\n", ""]);
 	
 	// exports
 
@@ -9064,6 +9064,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                var ratio = {};
 	                var angleR = Math.PI * 0.5 - (d * angle + acceptable);
 	                var thisRotate = 0.5;
+	                var opacity = 0;
 	
 	                if (Math.abs(Math.cos(angleR)) != 1) {
 	                    ratio.easeOut = 1 + Math.round(cubicOut(sides, 0, maxRatio, sides - 1) * 10 / 10);
@@ -9072,6 +9073,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	                if (Math.sin(angleR) != -1) {
 	                    thisRotate = Math.sin(angleR + Math.PI * 0.5) * 0.35;
+	                }
+	
+	                if (Math.sin(angleR) != 1) {
+	                    opacity = Math.max(Math.sin(angleR), 0.4);
+	                } else {
+	                    opacity = 1;
 	                }
 	
 	                // console.log('d:  '+d+'===================');
@@ -9083,7 +9090,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    rotateY: /*0 - thisRotate*ratio.easeOut */0 - thisRotate * ratio.easeOut,
 	                    translateX: r * Math.cos(angleR) * xDistance,
 	                    translateZ: 0 - r * Math.abs(1 - Math.sin(angleR)) * zDistance * ratio.easeOut, //bug issue with change z distance witnout min value
-	                    opacity: Math.sin(angleR) != 1 ? Math.sin(angleR) : 1,
+	                    opacity: opacity,
 	                    present: true,
 	                    key: d,
 	                    image: images[d].url
@@ -17184,9 +17191,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.onRotate = this.depot.onRotate.bind(this);
 	    },
 	    componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	        console.log('props change');
-	        console.log(nextProps);
 	        this.depot.onNextProps(nextProps);
+	        this.onRotate = this.depot.onRotate.bind(this);
 	    },
 	    render: function render() {
 	        // console.log('rander');
@@ -17294,7 +17300,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            layout: 'itunes',
 	            width: 400,
 	            duration: 300,
-	            ease: 'linear',
+	            ease: 'bounceInOut',
 	            zDistance: 15,
 	            xDistance: 2.7
 	        };
@@ -17465,10 +17471,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtp1/t31.0-8/12248124_10203613334413598_3005421614401152049_o.jpg',
 	        title: 'this items title ',
 	        link: 'http://dummyimage.com/'
-	    }, {
-	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12248263_10203626230816000_8407120421047731518_o.jpg',
-	        title: 'this items title ',
-	        link: 'http://dummyimage.com/'
 	    }
 	    // {
 	    //      url: 'http://dummyimage.com/600x400/4db594/fff&text=00',
@@ -17600,7 +17602,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var state = initialState;
 	    var props = initialProps;
 	    var requestID;
-	    console.log(callback);
 	    res.onNextProps = function onNextProps(nextProps) {
 	        if (true /*props.layout != nextProps.layout || props.items != nextProps.items*/) {
 	                props = nextProps;
@@ -17723,14 +17724,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	
 	function startFrame(now, then) {
-	    return now || Util.merge(then, { present: true, opacity: 0 });
+	    return now || Util.merge(then, { present: true });
 	}
 	
-	function endFrame(now, then) {
-	    return now && !then ? Util.merge(now, { present: false, opacity: 0 }) // leaves
-	    : Util.merge(then, { present: true, opacity: 1 });
+	/*opacity: 0 */function endFrame(now, then) {
+	    return now && !then ? Util.merge(now, { present: false }) // leaves
+	    : /*opacity: 0 */Util.merge(then, { present: true });
 	}
 	module.exports = exports['default'];
+	/*opacity: 1*/
 
 /***/ },
 /* 296 */
