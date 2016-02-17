@@ -91,22 +91,25 @@ table {
         transform-style: preserve-3d;
         perspective: 1500px;
         min-height: $listHeight;
-        > div {
+        > .mdBanner__item {
             transform-origin:50% 50%;
             display: block;
-            box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
-            position: absolute;
+            // box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
             width: 100%;
+            position: absolute;
             top:50%;
             left:0;
             margin-top: -50%;
-            -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.3));
+            box-shadow: 0 0 9999px rgba(255,255,255,0.8) inset;
+            background-size: 100% 100%;
+            // -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.3));
             a {
                 display: block;
             }
             img {
-                width: 100%;
-                display: block;
+                    width: 100%;
+                    display: block;
+                    visibility: hidden;
             }
         }
     }

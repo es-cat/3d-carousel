@@ -26,12 +26,12 @@ var App = React.createClass({
     getInitialState: function() {
         var state = {
             layout: 'itunes',
-            perspective:1500,
+            perspective:960,
             width: '30%',
-            diameter: 480,
+            diameter: 960,
             zDistance:1,
             xDistance:1,
-            opacity: true,
+            opacity: false,
             duration: 300 ,
             ease: 'linear' 
         };

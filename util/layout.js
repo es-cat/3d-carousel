@@ -11,7 +11,7 @@ export  default function Layout(){
                 var r = Math.floor(props.diameter / 2);
                 var angle = Math.PI * 2 / (sides);
                 var acceptable = Math.round(initial / angle) * angle;
-                var rotate = 20;
+                var rotate = -30;
                 var maxRatio = 0.4;
                 var zDistance = props.zDistance;
                 var xDistance = props.xDistance;
@@ -47,9 +47,9 @@ export  default function Layout(){
 
                     return {
                         rotateY: (0 - thisRotate*ratio.easeOut)*-1 ,
-                        translateX: (r * Math.cos(angleR)) *xDistance*ratio.easeOut ,
+                        translateX: (r * Math.cos(angleR)) *xDistance,
                         translateZ: 0 -  r * Math.abs(1 - Math.sin(angleR)) *zDistance*ratio.easeOut, //bug issue with change z distance witnout min value
-                        opacity: props.opacity ?  opacity*ratio.easeIn : 1 ,
+                        opacity: props.opacity ?  opacity : 1 ,
                         zIndex:  Math.round(Math.sin(angleR)*100),
                         present: true,
                         key: d,

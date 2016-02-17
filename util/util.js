@@ -4,10 +4,12 @@
 export function figureStyle(d) {
     var translateX = Object.hasOwnProperty.call(d, 'translateX') ? d.translateX : 0;
     var zIndex = Object.hasOwnProperty.call(d, 'zIndex') ? d.zIndex : 0;
+    var shadowOpacity =  d.opacity == 1 ?  0 : 1;
     return {
         transform: 'rotateY(' + d.rotateY + 'rad) ' + ' translateX(' + translateX + 'px)' + ' translateZ(' + d.translateZ + 'px)'+'',
         zIndex: zIndex,
-        opacity: d.opacity
+        boxShadow: '0 0 4444px 9999px rgba(0,0,0,'+( 1- d.opacity)+') inset'
+        // opacity: d.opacity
     };
 };
 

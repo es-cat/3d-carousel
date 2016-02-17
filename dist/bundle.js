@@ -64,7 +64,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0649393d0d083dfdd349"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a986e94dd54347f0913a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -6061,7 +6061,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nbody {\n  background-color: #493b3b; }\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.mdBanner {\n  width: 100vw;\n  height: 70vh;\n  margin: 15vh auto;\n  overflow: hidden; }\n  .mdBanner .btnPrev, .mdBanner .btnNext {\n    font-size: 20px;\n    font-weight: bold;\n    color: #fff; }\n  .mdBanner .btnPrev {\n    position: absolute;\n    left: 10vw;\n    top: 20vh;\n    z-index: 99; }\n  .mdBanner .btnNext {\n    position: absolute;\n    right: 10vw;\n    top: 20vh;\n    z-index: 99; }\n  .mdBanner .mdBanner-list {\n    position: relative;\n    width: 400px;\n    margin: 0 auto;\n    transform-style: preserve-3d;\n    perspective: 1500px;\n    min-height: 700px; }\n    .mdBanner .mdBanner-list li {\n      transform-origin: 50% 50%;\n      display: block;\n      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);\n      position: absolute;\n      width: 400px;\n      top: 50%;\n      left: 0;\n      margin-top: -50%;\n      -webkit-box-reflect: below 0 -webkit-linear-gradient(transparent, transparent 50%, rgba(255, 255, 255, 0.3)); }\n      .mdBanner .mdBanner-list li a {\n        display: block; }\n      .mdBanner .mdBanner-list li img {\n        width: 100%;\n        display: block; }\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nbody {\n  background-color: #493b3b;\n  max-width: 100vw; }\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.mdBanner {\n  position: relative;\n  z-index: 0;\n  width: 100%;\n  overflow: hidden;\n  min-height: 700px;\n  margin: 15vh auto; }\n  .mdBanner .btnPrev, .mdBanner .btnNext {\n    font-size: 20px;\n    font-weight: bold;\n    color: #fff;\n    width: 100%;\n    text-align: center; }\n  .mdBanner .btnPrev {\n    position: absolute;\n    left: -100%;\n    z-index: 99;\n    line-height: 700px;\n    vertical-align: middle; }\n  .mdBanner .btnNext {\n    position: absolute;\n    right: -100%;\n    line-height: 700px;\n    vertical-align: middle;\n    z-index: 99; }\n  .mdBanner .mdBanner-list {\n    position: relative;\n    width: 40%;\n    margin: 0 auto;\n    transform-style: preserve-3d;\n    perspective: 1500px;\n    min-height: 700px; }\n    .mdBanner .mdBanner-list .mdBanner__item {\n      transform-origin: 50% 50%;\n      display: block;\n      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 0 9999px black inset;\n      position: absolute;\n      width: 100%;\n      top: 50%;\n      left: 0;\n      margin-top: -50%; }\n      .mdBanner .mdBanner-list .mdBanner__item a {\n        position: relative;\n        display: block;\n        z-index: 0; }\n      .mdBanner .mdBanner-list .mdBanner__item img {\n        position: relative;\n        width: 100%;\n        display: block;\n        z-index: -1; }\n", ""]);
 	
 	// exports
 
@@ -9038,16 +9038,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	function Layout() {
 	    var layout = this;
 	    layout.itunes = {
-	        distance: function distance(width, sides) {
-	            return Math.round(width * Math.log(sides));
-	        },
+	        distance: function distance(width, sides) {},
 	        figures: function figures(props, images, initial) {
 	            var sides = images.length;
-	            var r = 960 / 2;
+	            var r = Math.floor(props.diameter / 2);
 	            var angle = Math.PI * 2 / sides;
-	            var distance = layout.itunes.distance(props.width, sides);
 	            var acceptable = Math.round(initial / angle) * angle;
-	            var rotate = 20;
+	            var rotate = -30;
 	            var maxRatio = 0.4;
 	            var zDistance = props.zDistance;
 	            var xDistance = props.xDistance;
@@ -9072,7 +9069,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                }
 	
 	                if (Math.sin(angleR) != -1) {
-	                    thisRotate = Math.sin(angleR + Math.PI * 0.5) * 0.35;
+	                    thisRotate = Math.sin(angleR + Math.PI * 0.5) * 0.3;
 	                }
 	
 	                if (Math.sin(angleR) != 1) {
@@ -9081,16 +9078,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    opacity = 1;
 	                }
 	
-	                // console.log('d:  '+d+'===================');
-	                // console.log('angleR:  '+angleR);
-	                // console.log('sin:  '+Math.sin(angleR));
-	                // console.log('ratio:  '+ratio);
-	                // console.log('===================');
 	                return {
-	                    rotateY: /*0 - thisRotate*ratio.easeOut */0 - thisRotate * ratio.easeOut,
+	                    rotateY: (0 - thisRotate * ratio.easeOut) * -1,
 	                    translateX: r * Math.cos(angleR) * xDistance,
 	                    translateZ: 0 - r * Math.abs(1 - Math.sin(angleR)) * zDistance * ratio.easeOut, //bug issue with change z distance witnout min value
-	                    opacity: opacity,
+	                    opacity: props.opacity ? opacity * ratio.easeOut : 1,
+	                    zIndex: Math.round(Math.sin(angleR) * 100),
 	                    present: true,
 	                    key: d,
 	                    image: images[d].url
@@ -17197,10 +17190,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	    render: function render() {
 	        // console.log('rander');
 	        var angle = 2 * Math.PI / this.state.figures.length;
+	        var listStyle = {
+	            perspective: this.props.perspective + 'px',
+	            width: !isNaN(this.props.width) ? this.props.width + 'px' : this.props.width
+	        };
+	
 	        var figures = this.state.figures.map(function (d, i) {
 	            return _react2['default'].createElement(
-	                'li',
-	                { key: i, style: Util.figureStyle(d) },
+	                'div',
+	                { key: i, style: Util.figureStyle(d), className: 'mdBanner__item' },
 	                _react2['default'].createElement(
 	                    'a',
 	                    { title: d.title, href: d.link, target: '_blank' },
@@ -17211,26 +17209,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return _react2['default'].createElement(
 	            'div',
 	            null,
-	            _react2['default'].createElement('p', null),
 	            _react2['default'].createElement(
 	                'div',
 	                { className: 'mdBanner' },
 	                _react2['default'].createElement(
-	                    'a',
-	                    { className: 'btnPrev', href: '#', onClick: Util.partial(this.onRotate, -angle) },
-	                    'to PREV'
-	                ),
-	                _react2['default'].createElement('br', null),
-	                _react2['default'].createElement(
-	                    'a',
-	                    { className: 'btnNext', href: '#', onClick: Util.partial(this.onRotate, +angle) },
-	                    'to NEXT'
-	                ),
-	                _react2['default'].createElement('br', null),
-	                _react2['default'].createElement(
-	                    'ul',
-	                    { className: "mdBanner-list", ref: 'bannerList' },
-	                    figures
+	                    'div',
+	                    { className: "mdBanner-list", ref: 'bannerList', style: listStyle },
+	                    _react2['default'].createElement(
+	                        'a',
+	                        { className: 'btnPrev', href: '#', onClick: Util.partial(this.onRotate, -angle) },
+	                        'to PREV'
+	                    ),
+	                    _react2['default'].createElement('br', null),
+	                    figures,
+	                    _react2['default'].createElement(
+	                        'a',
+	                        { className: 'btnNext', href: '#', onClick: Util.partial(this.onRotate, +angle) },
+	                        'to NEXT'
+	                    ),
+	                    _react2['default'].createElement('br', null)
 	                )
 	            )
 	        );
@@ -17298,11 +17295,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	    getInitialState: function getInitialState() {
 	        var state = {
 	            layout: 'itunes',
-	            width: 400,
+	            perspective: 960,
+	            width: '30%',
+	            diameter: 960,
+	            zDistance: 1,
+	            xDistance: 1,
+	            opacity: false,
 	            duration: 300,
-	            ease: 'bounceInOut',
-	            zDistance: 15,
-	            xDistance: 2.7
+	            ease: 'linear'
 	        };
 	        var _this = this;
 	        var easeType = [];
@@ -17313,14 +17313,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	        });
 	
 	        this.controller = {};
-	        this.controller.duration = gui.add(state, 'duration', 0, 2000).step(300);
+	        this.controller.perspective = gui.add(state, 'perspective', 0, 3000).step(50);
+	        this.controller.width = gui.add(state, 'width');
+	        this.controller.diameter = gui.add(state, 'diameter', 0, 2000).step(1);
 	        this.controller.zDistance = gui.add(state, 'zDistance', 1, 20).step(0.05);
-	        this.controller.xDistance = gui.add(state, 'xDistance', 0.5, 5).step(0.05);
+	        this.controller.xDistance = gui.add(state, 'xDistance', 1, 20).step(0.05);
+	        this.controller.opacity = gui.add(state, 'opacity');
+	        this.controller.duration = gui.add(state, 'duration', 0, 2000).step(300);
 	        this.controller.ease = gui.add(state, 'ease', easeType);
 	
 	        Util.mapObj(function (input) {
 	            input.onFinishChange(function (value) {
-	                // console.log(value);
 	                _this.setState(Object.assign({}, _this.state, state));
 	            });
 	        }, this.controller);
@@ -17344,11 +17347,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	                current: banner.current,
 	                actions: actions,
 	                layout: 'itunes',
-	                width: 400,
 	                duration: this.state.duration,
+	                perspective: this.state.perspective,
+	                diameter: this.state.diameter,
+	                width: this.state.width,
 	                zDistance: this.state.zDistance,
 	                xDistance: this.state.xDistance,
-	                ease: this.state.ease })
+	                ease: this.state.ease,
+	                opacity: this.state.opacity })
 	        );
 	    }
 	});
@@ -17432,26 +17438,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        title: 'this items title ',
 	        link: 'http://dummyimage.com/'
 	    }, {
-	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/12248253_10203613333613578_589434527540606903_o.jpg',
-	        title: 'this items title ',
-	        link: 'http://dummyimage.com/'
-	    }, {
-	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/12308039_10203613333173567_143587201602287169_o.jpg',
-	        title: 'this items title ',
-	        link: 'http://dummyimage.com/'
-	    }, {
-	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtp1/t31.0-8/12248124_10203613334413598_3005421614401152049_o.jpg',
-	        title: 'this items title ',
-	        link: 'http://dummyimage.com/'
-	    }, {
-	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12248263_10203626230816000_8407120421047731518_o.jpg',
-	        title: 'this items title ',
-	        link: 'http://dummyimage.com/'
-	    }, {
-	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/12238447_10203600950224001_6411634351160817167_o.jpg',
-	        title: 'this items title ',
-	        link: 'http://dummyimage.com/'
-	    }, {
 	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/12244565_10203609955769134_952712191895439539_o.jpg',
 	        title: 'this items title ',
 	        link: 'http://dummyimage.com/'
@@ -17459,55 +17445,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/12265972_10203613334813608_5593025909823429206_o.jpg',
 	        title: 'this items title ',
 	        link: 'http://dummyimage.com/'
-	    }, {
-	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/12248253_10203613333613578_589434527540606903_o.jpg',
-	        title: 'this items title ',
-	        link: 'http://dummyimage.com/'
-	    }, {
-	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/12308039_10203613333173567_143587201602287169_o.jpg',
-	        title: 'this items title ',
-	        link: 'http://dummyimage.com/'
-	    }, {
-	        url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtp1/t31.0-8/12248124_10203613334413598_3005421614401152049_o.jpg',
-	        title: 'this items title ',
-	        link: 'http://dummyimage.com/'
-	    }
-	    // {
-	    //      url: 'http://dummyimage.com/600x400/4db594/fff&text=00',
-	    //      title: 'this items title ',
-	    //      link: 'http://dummyimage.com/'
-	    //  },
-	    //  {
-	    //      url: 'http://dummyimage.com/600x400/4db594/fff&text=01',
-	    //      title: 'this items title ',
-	    //      link: 'http://dummyimage.com/'
-	    //  },
-	    //  {
-	    //      url: 'http://dummyimage.com/600x400/4db594/fff&text=02',
-	    //      title: 'this items title ',
-	    //      link: 'http://dummyimage.com/'
-	    //  },
-	    //  {
-	    //      url: 'http://dummyimage.com/600x400/4db594/fff&text=03',
-	    //      title: 'this items title ',
-	    //      link: 'http://dummyimage.com/'
-	    //  },
-	    //  {
-	    //      url: 'http://dummyimage.com/600x400/4db594/fff&text=04',
-	    //      title: 'this items title ',
-	    //      link: 'http://dummyimage.com/'
-	    //  },
-	    //  {
-	    //      url: 'http://dummyimage.com/600x400/4db594/fff&text=05',
-	    //      title: 'this items title ',
-	    //      link: 'http://dummyimage.com/'
-	    //  },
-	    //  {
-	    //      url: 'http://dummyimage.com/600x400/4db594/fff&text=06',
-	    //      title: 'this items title ',
-	    //      link: 'http://dummyimage.com/'
-	    //  }
-	    ]
+	    }]
 	};
 	
 	function banner(state, action) {

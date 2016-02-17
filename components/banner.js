@@ -42,9 +42,16 @@ var Banner = React.createClass({
             width: !isNaN(this.props.width) ? this.props.width+ 'px' : this.props.width
         };
 
+
+
         var figures =  this.state.figures.map(function(d,i) {
+
+                var itemStyle  = {
+                    backgroundImage: "url("+d.image+")",
+                };
+
                 return (
-                    <div key={i}  style={Util.figureStyle(d)}>
+                    <div key={i}  style={Object.assign({},itemStyle,Util.figureStyle(d))} className={'mdBanner__item'} >
                         <a title={d.title} href={d.link} target="_blank">
                             <img className="image" src={d.image} />
                         </a>
