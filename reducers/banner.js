@@ -4,7 +4,7 @@ const initialState = {
     current:0,
     items: [
         {
-            url: 'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-0/q81/p206x206/12243367_10203600950224001_6411634351160817167_n.jpg?oh=7de09f7c3ed691acb026fbdfe4f84131&oe=58E653F7',
+            url: 'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-0/q81/p206x206/12243367_10203600950224001_6411634351160817167_n.jpg',
             title: 'this items title ',
             link: 'http://dummyimage.com/'
         },
