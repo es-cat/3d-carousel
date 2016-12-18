@@ -4,12 +4,12 @@ const initialState = {
     current:0,
     items: [
         {
-            url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/12238447_10203600950224001_6411634351160817167_o.jpg',
+            url: 'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-0/q81/p206x206/12243367_10203600950224001_6411634351160817167_n.jpg?oh=7de09f7c3ed691acb026fbdfe4f84131&oe=58E653F7',
             title: 'this items title ',
             link: 'http://dummyimage.com/'
         },
         {
-            url: 'https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/12244565_10203609955769134_952712191895439539_o.jpg',
+            url: 'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/14322231_1269345239750414_34795706216597478_n.jpg?oh=8dbdd4758191a0318e32f9f3922af011&oe=58AE7AE0',
             title: 'this items title ',
             link: 'http://dummyimage.com/'
         },
