@@ -17,17 +17,17 @@ class Carousel extends React.Component {
         this.state = {
             current: 0,
             rotationY: 0,
-            items: [],
-            figures:[]
+            items: this.props.items,
+            figures: _layout[this.props.layout].figures(this.props, this.props.items, 0)
         };
         
     }
 
     componentWillMount() {
-        this.setState({
-            items: this.props.items,
-            figures: _layout[this.props.layout].figures(this.props, this.props.items, 0)
-        });
+        // this.setState({
+        //     items: this.props.items,
+        //     figures: _layout[this.props.layout].figures(this.props, this.props.items, 0)
+        // });
         this.depot = Depot(this.state, this.props, this.setState.bind(this));
         this.onRotate = this.depot.onRotate.bind(this);
         
