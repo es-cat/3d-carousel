@@ -323,8 +323,6 @@ p {
       margin-top: -50%;
       -webkit-box-shadow: 0 0 9999px rgba(255, 255, 255, 0.8) inset;
       box-shadow: 0 0 9999px rgba(255, 255, 255, 0.8) inset;
-      -webkit-transition: all 0.5s ease-in;
-      transition: all 0.5s ease-in;
       background-size: 100% 100%; }
       .mdBanner .mdBanner-list > .mdBanner__item a {
         display: block;
