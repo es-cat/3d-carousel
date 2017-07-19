@@ -65,10 +65,10 @@ class Demo extends React.Component {
         var state = {
             layout: 'itunes',
             perspective: 960,
-            width: '15%',
+            width: '300px',
             diameter: 960,
             zDistance: 3,
-            xDistance: 3,
+            xDistance: 2.3,
             opacity: true,
             duration: 300,
             ease: 'sineOut'
