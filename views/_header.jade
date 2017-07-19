@@ -1,7 +1,20 @@
 head
-    title example
+    title #{page.title}
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel="stylesheet", href="css/main.css")
+    meta(name='description', content='#{page.desc}')
+    meta(name='viewport', content='width=640')
+
+    // Schema.org markup for Google+
+    meta(itemprop="name" content="#{page.title}")
+    meta(itemprop="description" content="#{page.desc}")
+    meta(itemprop="image" content="#{page.image}")
+
+    // og
+    meta(property="og:title" content="#{page.title}")
+    meta(property="og:description" content="#{page.desc}")
+    meta(property="og:type" content="article")
+    meta(property="og:image" content="#{page.image}")
 
     block styles
     script(src="js/common.bundle.js")

@@ -7,33 +7,33 @@ $ft_height_mb: 0;
     margin: 0;
 }
 
-html, body {
-    margin: 0 auto;
-    font-family: Arial,'微軟正黑體','Microsoft JhengHei',Verdana,Arial,Helvetica,sans-serif,'STHeiti Light','儷黑 Pro','LiHei Pro','Microsoft Yahei','Microsoft JhengHei','新細明體';
-    @include respond-to(small){
-        html, body {
-            overflow-x: hidden; 
-            //在行動裝置HTML&BODY需一起下OVERFLOW-X        
-        }
-    };
-}
+// html, body {
+//     margin: 0 auto;
+//     font-family: Arial,'微軟正黑體','Microsoft JhengHei',Verdana,Arial,Helvetica,sans-serif,'STHeiti Light','儷黑 Pro','LiHei Pro','Microsoft Yahei','Microsoft JhengHei','新細明體';
+//     @include respond-to(small){
+//         html, body {
+//             overflow-x: hidden; 
+//             //在行動裝置HTML&BODY需一起下OVERFLOW-X        
+//         }
+//     };
+// }
 
-html{
-    height: 100%;
-}
+// html{
+//     height: 100%;
+// }
 
-body{
-    height: 100%;
-    margin: 0 auto;
-    @include respond-to(small-up) {
-        min-width: 960px;
-        min-height: 800px;
-    };
-    @include respond-to(small) {
-        min-width: 640px;
-        -webkit-text-size-adjust: none;
-    }    
-}
+// body{
+//     height: 100%;
+//     margin: 0 auto;
+//     @include respond-to(small-up) {
+//         min-width: 960px;
+//         min-height: 800px;
+//     };
+//     @include respond-to(small) {
+//         min-width: 640px;
+//         -webkit-text-size-adjust: none;
+//     }    
+// }
 .fb-root {
     height: 0;
     overflow: hidden;

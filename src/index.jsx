@@ -8,47 +8,47 @@ import Ease from 'ease-functions';
 
 const items = [
     {
-        url: 'https://placem.at/things?w=600&random=some_seed',
+        url: 'https://placem.at/things?w=400&random='+1,
         title: 'this items title ',
         link: 'http://dummyimage.com/'
     },
     {
-        url: 'https://placem.at/things?w=600&random=some_seed',
+        url: 'https://placem.at/things?w=400&random='+2,
         title: 'this items title ',
         link: 'http://dummyimage.com/'
     },
     {
-        url: 'https://placem.at/things?w=600&random=some_seed',
+        url: 'https://placem.at/things?w=400&random='+3,
         title: 'this items title ',
         link: 'http://dummyimage.com/'
     },
     {
-        url: 'https://placem.at/things?w=600&random=some_seed',
+        url: 'https://placem.at/things?w=400&random='+4,
         title: 'this items title ',
         link: 'http://dummyimage.com/'
     },
     {
-        url: 'https://placem.at/things?w=600&random=some_seed',
+        url: 'https://placem.at/things?w=400&random='+5,
         title: 'this items title ',
         link: 'http://dummyimage.com/'
     },
     {
-        url: 'https://placem.at/things?w=600&random=some_seed',
+        url: 'https://placem.at/things?w=400&random='+6,
         title: 'this items title ',
         link: 'http://dummyimage.com/'
     },
     {
-        url: 'https://placem.at/things?w=600&random=some_seed',
+        url: 'https://placem.at/things?w=400&random='+7,
         title: 'this items title ',
         link: 'http://dummyimage.com/'
     },
     {
-        url: 'https://placem.at/things?w=600&random=some_seed',
+        url: 'https://placem.at/things?w=400&random='+8,
         title: 'this items title ',
         link: 'http://dummyimage.com/'
     },
     {
-        url: 'https://placem.at/things?w=600&random=some_seed',
+        url: 'https://placem.at/things?w=400&random='+9,
         title: 'this items title ',
         link: 'http://dummyimage.com/'
     }
@@ -65,13 +65,13 @@ class Demo extends React.Component {
         var state = {
             layout: 'itunes',
             perspective: 960,
-            width: '25%',
+            width: '300px',
             diameter: 960,
             zDistance: 3,
-            xDistance: 3,
+            xDistance: 2.3,
             opacity: true,
             duration: 300,
-            ease: 'linear'
+            ease: 'sineOut'
         };
         var _this = this;
         var easeType = [];
@@ -85,8 +85,8 @@ class Demo extends React.Component {
         this.controller.perspective = gui.add(state, 'perspective', 0, 3000).step(50);
         this.controller.width = gui.add(state, 'width');
         this.controller.diameter = gui.add(state, 'diameter', 0, 2000).step(1);
-        this.controller.zDistance = gui.add(state, 'zDistance', 1, 20).step(0.05);
-        this.controller.xDistance = gui.add(state, 'xDistance', 1, 20).step(0.05);
+        this.controller.zDistance = gui.add(state, 'zDistance', 1, 5).step(0.001);
+        this.controller.xDistance = gui.add(state, 'xDistance', 1, 5).step(0.001);
         this.controller.opacity = gui.add(state, 'opacity');
         this.controller.duration = gui.add(state, 'duration', 0, 2000).step(300);
         this.controller.ease = gui.add(state, 'ease', easeType);

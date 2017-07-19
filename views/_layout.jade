@@ -1,7 +1,9 @@
 doctype html
+block pageinfo
+    - var page = { title: 'React 輪播',desc:'作者：羅拉拉。未來還想增加更多功能',image:'https://media.giphy.com/media/l1KUyLkBRzQSRFe48/giphy.gif' }
 html
-	include _header
-	body
-		div.container-fluid
-			block content
-		block scripts
+    include _header
+    body
+        div.container-fluid
+            block content
+        block scripts

@@ -16,7 +16,7 @@ export function figureStyle(d) {
             'px)' +
             '',
         zIndex: zIndex,
-        boxShadow: '0 0 4444px 9999px rgba(0,0,0,' + (1 - d.opacity) + ') inset',
+        boxShadow: '0 0 100px 100px rgba(0,0,0,' + (1 - d.opacity) + ') inset',
         opacity: d.opacity
         // opacity: d.opacity
     };
