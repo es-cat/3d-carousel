@@ -8,6 +8,7 @@
     "develop": "gulp develop",
     "deploy": "gulp deploy",
     "publish": "git subtree push --prefix public origin gh-pages",
+    "publish-force": "git push origin `git subtree split --prefix public`:gh-pages --force",
     "test": "jest --coverage",
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook"
