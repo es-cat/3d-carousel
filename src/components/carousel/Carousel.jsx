@@ -17,56 +17,19 @@ class Carousel extends React.Component {
         this.state = {
             current: 0,
             rotationY: 0,
-            items: [
-                {
-                    url: 'https://placem.at/things?w=600&random',
-                    title: 'this items title ',
-                    link: 'http://dummyimage.com/'
-                },
-                {
-                    url: 'https://placem.at/things?w=600&random=some_seed',
-                    title: 'this items title ',
-                    link: 'http://dummyimage.com/'
-                },
-                {
-                    url: 'https://placem.at/things?w=600&random=some_seed',
-                    title: 'this items title ',
-                    link: 'http://dummyimage.com/'
-                },
-                {
-                    url: 'https://placem.at/things?w=600&random=some_seed',
-                    title: 'this items title ',
-                    link: 'http://dummyimage.com/'
-                },
-                {
-                    url: 'https://placem.at/things?w=600&random=some_seed',
-                    title: 'this items title ',
-                    link: 'http://dummyimage.com/'
-                },
-                {
-                    url: 'https://placem.at/things?w=600&random=some_seed',
-                    title: 'this items title ',
-                    link: 'http://dummyimage.com/'
-                },
-                {
-                    url: 'https://placem.at/things?w=600&random=some_seed',
-                    title: 'this items title ',
-                    link: 'http://dummyimage.com/'
-                }
-            ],
+            items: [],
             figures:[]
         };
         
     }
 
     componentWillMount() {
-        this.depot = Depot(this.state, this.props, this.setState.bind(this));
-        this.onRotate = this.depot.onRotate.bind(this);
-        console.log();
         this.setState({
             items: this.props.items,
             figures: _layout[this.props.layout].figures(this.props, this.props.items, 0)
         });
+        this.depot = Depot(this.state, this.props, this.setState.bind(this));
+        this.onRotate = this.depot.onRotate.bind(this);
         
     }
     componentWillReceiveProps(nextProps) {
@@ -101,22 +64,27 @@ class Carousel extends React.Component {
             <div>
                 <div className={'mdBanner'}>
                     <div className={'mdBanner-list'} ref="bannerList" style={listStyle}>
-                        <a
-                            className={'btnPrev'}
-                            href={'#'}
-                            onClick={Util.partial(this.onRotate, -angle)}
-                        >
-                            to PREV
-                        </a>
-                        <br />
+                        <div className="l-vm btnPrev">
+                            <div className="l-vm__content">
+                                <a
+                                    className=""
+                                    href={'#'}
+                                    onClick={Util.partial(this.onRotate, +angle)}
+                                >
+                                    {'<'}
+                                </a>
+                            </div>
+                        </div>
                         {figures}
-                        <a
-                            className={'btnNext'}
-                            href={'#'}
-                            onClick={Util.partial(this.onRotate, +angle)}
-                        >
-                            to NEXT
-                        </a>
+                        <div className="l-vm btnNext">
+                            <a
+                                className="l-vm__content"
+                                href={'#'}
+                                onClick={Util.partial(this.onRotate, -angle)}
+                            >
+                                {'>'}
+                            </a>
+                        </div>
                         <br />
                     </div>
                 </div>
